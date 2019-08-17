@@ -17,15 +17,15 @@ CuboidMaker.prototype.surfaceArea = function(){
 
 class CuboidMaker {
     constructor(properties){
-    this.length = properties.length;
-    this.width = properties.width;
-    this.height = properties.height;
-  }
-  volume = function(){
-    return `${this.length}` * `${this.width}` * `${this.height}`;
-  }
-  surfaceArea = function(){
-    return 2 * (`${this.length}` * `${this.width}` + `${this.length}` * `${this.height}`+ `${this.width}` * `${this.height}`)
+      this.length = properties.length;
+      this.width = properties.width;
+      this.height = properties.height;
+    }
+    volume(){
+      return `${this.length}` * `${this.width}` * `${this.height}`;
+    }
+    surfaceArea(){
+      return 2 * (`${this.length}` * `${this.width}` + `${this.length}` * `${this.height}`+ `${this.width}` * `${this.height}`);
   }
 }
 
